@@ -209,7 +209,7 @@
                 ?>
                     <script type="text/javascript">    
                         alert('Successfully Login');
-                        window.open("http://localhost/php/sms/Home/main.php","_self");
+                        window.open("http://localhost/sms-main/main.php","_self");
                         </script>
 
                 <?php

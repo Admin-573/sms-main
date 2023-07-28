@@ -29,7 +29,7 @@ $con=mysqli_connect($HOST,$USER,$PASSWORD,$DATABASE_NAME);
 if(!$con){
     mysqli_connect_error();
 }else{
-    echo "connected to database";
+    //echo "connected to database";
 }
 
 ?>

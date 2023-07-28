@@ -303,7 +303,7 @@
                         ?>
                         <script type="text/javascript">
                             alert("Successfully Register !")
-                            window.open("http://localhost/php/sms/Home/Login.php","_self")
+                            window.open("http://localhost/sms-main/Login.php","_self")
                             </script>
                         <?php
                     }
@@ -313,7 +313,7 @@
             if(isset($_POST['alreadyAccount'])){
                 ?>
                 <script>
-                    window.open("http://localhost/php/sms/Home/Login.php","_self")
+                    window.open("http://localhost/sms-main/Login.php","_self")
                     </script>
                 <?php
             }

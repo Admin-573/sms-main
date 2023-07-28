@@ -194,7 +194,7 @@
                 ?>
                 <script type="text/javascript">
                 alert("Password Update Successfully")
-                    window.open("http://localhost/php/sms/Home/Login.php","_self")
+                    window.open("http://localhost/sms-main/Login.php","_self")
                 </script>
                 <?php
                 }
@@ -210,7 +210,7 @@
         if(isset($_POST['gotoHome'])){
             ?>
                 <script type="text/javascript">
-                        window.open("http://localhost/php/sms/Home/Home.php","_self")
+                        window.open("http://localhost/sms-main/Home.php","_self")
                     </script>
             <?php
         }
