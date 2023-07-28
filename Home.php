@@ -63,7 +63,6 @@
         margin-right: auto;
     }
     #grad_back {
-        height: 600px;
         background-image: linear-gradient(to bottom right , red , blue , red);
     } 
 
@@ -72,7 +71,9 @@
             Student Management System
         </title>
     </head>
+
     <body id="grad_back">
+        
     <table style="margin:auto ; margin-top:90px ; margin-bottom:90px">
         <td>
             <img src ="images/home_back.png" class="center_img" width=500px/>

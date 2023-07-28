@@ -2,13 +2,8 @@
 <html lang="en-US" style="text-align: center;">
     <meta charset="UTF-8">
     <head>
-        <title>
-            Sign Up Here
-        </title>
-    </head>
     <style>
             #grad_back {
-                height: 600px;
                 background-image: linear-gradient(to bottom right , red , indigo , white );
             }
             .label{
@@ -39,6 +34,10 @@
                 color: white;
             }
         </style>
+        <title>
+            Sign Up Here
+        </title>
+    </head>
 
     <body id="grad_back">
 
@@ -255,8 +254,9 @@
                     </form>
             </td>
         </table>
-
-        <?php
+    </body>
+</html>
+<?php
         include "_init.php" ;
             $createTable= "CREATE TABLE $STUDENT(
                 $STUD_FNAME VARCHAR(20),$STUD_LNAME VARCHAR(20),
@@ -318,5 +318,3 @@
                 <?php
             }
         ?>
-    </body>
-</html>

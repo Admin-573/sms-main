@@ -239,14 +239,14 @@
     if(isset($_POST['newAccount'])){
         ?>
             <script type="text/javascript">
-                    window.open("http://localhost/php/sms/Home/index.php","_self")
+                    window.open("http://localhost/sms-main/index.php","_self")
                 </script>
         <?php
     }
     if(isset($_POST['forgotPassword'])){
         ?>
             <script type="text/javascript">
-                    window.open("http://localhost/php/sms/Home/ForgotPassword.php","_self")
+                    window.open("http://localhost/sms-main/ForgotPassword.php","_self")
                 </script>
         <?php
     }

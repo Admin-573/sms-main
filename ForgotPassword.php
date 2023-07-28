@@ -46,12 +46,12 @@
 
             .left {
                 left: 0;
-                background-color: lightsalmon;
+                background-color: Royalblue;
             }
 
             .right {
                 right: 0;
-                background-color: rgb(131, 28, 45);
+                background-color: #EEA47F;
             }
 
             .centered {
