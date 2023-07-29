@@ -2,9 +2,9 @@
 <html lang="en-US" style="text-align: center;">
     <meta charset="UTF-8">
     <head>
-    <style>
+        <style>
             #grad_back {
-                background-image: linear-gradient(to bottom right , red , indigo , white );
+                background: linear-gradient(to right , red , indigo , salmon);
             }
             .label{
                 font-size: 32px;
@@ -26,10 +26,10 @@
                 font-size: 16px;
                 cursor: pointer;
             }
-            .signin {
+            .signdes {
                 border-color: crimson;
                 color: crimson;
-            }.signin:hover {
+            }.signdes:hover {
                 background-color: crimson;
                 color: white;
             }
@@ -41,16 +41,17 @@
 
     <body id="grad_back">
 
-        <table style="margin:auto ; margin-top:90px ; margin-bottom:90px">
-            <td>
-                <img src="images/home_register.png"></br>
-                <label class="label">
-                    Welcome To SMS ~</br>
-                </label>
-                <label class="label">
-                    ~ Registration Form</br>
-                </label>
-            </td>
+        <table style="margin-left:auto ; margin-right:auto ; margin-top:40px ; margin-bottom:40px">
+
+                <td>
+                    <img src="images/home_register.png"></br>
+                    <label class="label">
+                        Welcome To SMS ~</br>
+                    </label>
+                    <label class="label">
+                        ~ Registration Form</br>
+                    </label>
+                </td>
 
             <td></td> <td></td> <td></td> <td></td> <td></td>
             <td></td> <td></td> <td></td> <td></td> <td></td>
@@ -227,14 +228,14 @@
 
 
                     <div>
-                        <input type="submit" name="btnSignUp" id="btnSignUp" value="Sign up" 
-                        style="padding-left: 32px;padding-right: 32px;padding-top: 7px;padding-bottom: 7px;font-size: 17px;
-                        font-family: Comic Sans MS ; 
-                        font-weight: bold ; 
-                        color: white ; 
-                        background-color: crimson ; 
-                        border-color: crimson ; outline-color: white ; border-radius: 12px;
-                        margin-top: 22px;">
+                        <input class="btn signdes"type="submit" name="btnSignUp" id="btnSignUp" value="Sign up" 
+                        style=" padding-left: 82px ; padding-right: 82px;
+                                padding-top: 7px;padding-bottom: 7px;
+                                font-size: 17px;
+                                font-family: Comic Sans MS ; 
+                                font-weight: bold ;   
+                                border-radius: 12px ; 
+                                margin-top: 22px">
                     </div>
 
                 </form>
@@ -242,12 +243,13 @@
                 <form action="" method="post">
                         <div>
                             <button 
-                                class="btn signin" 
-                                style="padding-left: 32px;padding-right: 32px;padding-top: 7px;padding-bottom: 7px;font-size: 17px;
-                                font-family: Comic Sans MS ; 
-                                font-weight: bold ;   
-                                border-radius: 12px ; 
-                                margin-top: 22px"
+                                class="btn signdes" 
+                                style="padding-left: 26px;padding-right: 26px;
+                                        padding-top: 7px;padding-bottom: 7px;font-size: 17px;
+                                        font-family: Comic Sans MS ; 
+                                        font-weight: bold ;   
+                                        border-radius: 12px ; 
+                                        margin-top: 22px"
                                 name="alreadyAccount">Already A Student ?
                             </button>
                         </div>

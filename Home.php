@@ -74,7 +74,7 @@
 
     <body id="grad_back">
         
-    <table style="margin:auto ; margin-top:90px ; margin-bottom:90px">
+    <table style="margin-left:auto ; margin-right:auto ; margin-top:50px ; margin-bottom: auto">
         <td>
             <img src ="images/home_back.png" class="center_img" width=500px/>
         </td>
