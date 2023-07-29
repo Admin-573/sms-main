@@ -60,7 +60,7 @@
     .center_img {
         display: block;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: 50px;
     }
     #grad_back {
         background-image: linear-gradient(to bottom right , red , indigo , white);
@@ -74,9 +74,9 @@
 
     <body id="grad_back">
         
-    <table style="margin-left:auto ; margin-right:auto ; margin-top:50px ; margin-bottom: auto">
+    <table style="margin-left:auto ; margin-right:auto ; margin-top:100px ;">
         <td>
-            <img src ="images/home_back.png" class="center_img" width=500px/>
+            <img src ="images_faculty/faculty.png" class="center_img"/>
         </td>
         <td>
 

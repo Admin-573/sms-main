@@ -76,7 +76,7 @@
         
     <table style="margin-left:auto ; margin-right:auto ; margin-top:50px ; margin-bottom: auto">
         <td>
-            <img src ="images/home_back.png" class="center_img" width=500px/>
+            <img src ="images_admin/admin.png" class="center_img" width=500px/>
         </td>
         <td>
 
