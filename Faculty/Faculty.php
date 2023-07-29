@@ -112,7 +112,7 @@
         if(isset($_POST['btnSignUp'])){
             ?>
                 <script>
-                    window.open("http://localhost/sms-main/faculty_signup.php","_self")
+                    window.open("http://localhost/sms-main/Faculty/faculty_signup.php","_self")
                     </script>
             <?php
         }
@@ -120,7 +120,7 @@
         if(isset($_POST['btnSignIn'])){
             ?>
                 <script>
-                    window.open("http://localhost/sms-main/faculty_login.php","_self")
+                    window.open("http://localhost/sms-main/Faculty/faculty_login.php","_self")
                     </script>
             <?php
         }

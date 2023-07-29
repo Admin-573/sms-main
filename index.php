@@ -269,7 +269,8 @@
 
             //$queryExe=mysqli_query($con,$createTable);
 
-            if(isset($_POST['btnSignUp'])){
+            if(isset($_POST['btnSignUp']))
+            {
                 $FNAME=$_POST[$STUD_FNAME];
                 $LNAME=$_POST[$STUD_LNAME];
                 $EMAIL=$_POST[$STUD_EMAIL];
