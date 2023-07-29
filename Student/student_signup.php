@@ -1,10 +1,10 @@
 <html>
     <head>
         <title>
-            Faculty Panel
+            Stduent SignUp
         </title>
     </head>
     <body>
-        <h1> Faculty Panel </h1>
+        <h1> Student SignUp </h1>
     </body>
 </html>

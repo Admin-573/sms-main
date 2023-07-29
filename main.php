@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>
-            Panels
+            Student Management System
         </title>
     </head>
     
@@ -49,7 +49,7 @@
                         </fieldset>
                     </legend>
                     
-                    <form action="Admin.php" method="post">
+                    <form action="Admin/Admin.php" method="post">
                         <div style="margin-bottom: 15px ; text-align: center">
                             <input class="btn panel" type="submit" name="btnAdmin" id="btnAdmin" value="Admin" 
                             style="
@@ -65,7 +65,7 @@
                         </div>
                     </form>
 
-                    <form action="Faculty.php" method="post">
+                    <form action="Faculty/Faculty.php" method="post">
                         <div style="margin-bottom: 15px ; text-align: center">
                             <input class="btn panel" type="submit" name="btnFaculty" id="btnFaculty" value="Faculty" 
                             style="
@@ -80,7 +80,7 @@
                         </div>
                     </form>
 
-                    <form action="student.php" method="post">
+                    <form action="Student/Student.php" method="post">
                         <div style="margin-bottom: 15px ; text-align: center">
                             <input class="btn panel" type="submit" name="btnStudent" id="btnStudent" value="Student " 
                             style="
