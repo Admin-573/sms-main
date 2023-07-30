@@ -1,36 +1,13 @@
 <html>
     <head>
     <style>
-    .button_signup {
-        transition-duration: 0.4s;
-        border: 3px solid black;
-        font-family:"Comic Sans MS";
-        border-radius: 12px;
-        padding: 15px 40px;
-        display: inline-block;
-        text-align: center;
-        background-color: white;
-        color: black;
-        font-size: 18px;
-        cursor: pointer;
-    }
-    .signup {
-        border-color: crimson;
-        background-color: crimson;
-        color: white;
-        }
-
-    .signup:hover {
-        border-color: crimson;
-        background-color: white;
-        color: crimson;
-    }
     .button_signin {
+        margin-left: 30px;
         transition-duration: 0.4s;
         border: 3px solid black;
         font-family:"Comic Sans MS";
         border-radius: 12px;
-        padding: 15px 15px;
+        padding: 15px 50px;
         display: inline-block;
         text-align: center;
         background-color: white;
@@ -94,12 +71,7 @@
             <table>
                 <td>
                     <form action="" method="POST">
-                        <button style="margin-right:20px" class="button_signup signup" name="btnSignUp">New Faculty</button>
-                    </form>
-                </td>
-                <td>
-                    <form action="" method="POST">
-                        <button class="button_signin signin" name="btnSignIn">Already An Faculty</button>
+                        <button class="button_signin signin" name="btnSignIn">Faculty Login</button>
                     </form>
                 </td>
             </table>
@@ -109,13 +81,6 @@
     </body>
 
     <?php
-        if(isset($_POST['btnSignUp'])){
-            ?>
-                <script>
-                    window.open("http://localhost/sms-main/Faculty/faculty_signup.php","_self")
-                    </script>
-            <?php
-        }
 
         if(isset($_POST['btnSignIn'])){
             ?>
