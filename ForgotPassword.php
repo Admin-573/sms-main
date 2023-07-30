@@ -21,7 +21,6 @@
             }.chng_pass:hover {
                 background-color: crimson;
                 color: white;
-
             }.go_to_home {
                 border-color: crimson;
                 color: crimson;

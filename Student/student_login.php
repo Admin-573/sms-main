@@ -147,6 +147,21 @@
                      </form>
                     </table>
                 </fieldset>
+                    <form action="update_pass.php" method="post">
+                        <div style="margin-bottom: 15px">
+                            <input class="btn signin" type="submit" name="btnFrgtPass" id="btnFrgtPass" value="Forgot Password ?" 
+                            style="
+                            padding-left: 32px;
+                            padding-right: 32px;
+                            padding-top: 7px;
+                            padding-bottom: 7px;
+                            font-size: 17px;
+                            font-family: Comic Sans MS ; 
+                            font-weight: bold ;   
+                            border-radius: 12px ; 
+                            margin-top: 22px">
+                        </div>
+                    </form>
             </div>
         </div>
     </body>
@@ -158,7 +173,7 @@
             $STUDENT_EMAIL VARCHAR(50) PRIMARY KEY,
             $STUDENT_PASSWORD TEXT)";
 
-            $queryExe=mysqli_query($con,$createTable);
+            //$queryExe=mysqli_query($con,$createTable);
 
             if(isset($_POST['btnLogin'])){
 
@@ -189,6 +204,7 @@
                 }
             }
         }
+
     ?>
     </body>
 </html>

@@ -46,7 +46,7 @@
 
         <div class="navbar" style="border-radius:25px">
 
-            <a>
+            <a style="background-color:#E9967A">
                 <h7 style="margin-left: 20px;">Student Management System</h7>
             </a>
 
