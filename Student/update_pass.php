@@ -21,22 +21,26 @@
             color: white;
         }.split {
                 height: 85.3%;
-                width: 50%;
-                margin-top: 70px;
+                width: 40%;
+                margin-top: 65px;
                 position: absolute;
                 z-index: 1;
                 top: 0;
                 overflow-x: hidden;
-                padding-top: 20px;
+                padding-top: 10px;
             }
 
             .left {
                 left: 0;
+                margin-left: 130px;
+                border-radius: 10%;
                 background-color: Royalblue;
             }
 
             .right {
                 right: 0;
+                margin-right: 130px;
+                border-radius: 10%;
                 background-color: #A38AC3;
             }
 
@@ -51,11 +55,11 @@
         body {font-family: "Comic Sans MS"}
 
         #grad_back {
-            background: linear-gradient(to right , palevioletred ,indigo , orangered);
+            background: linear-gradient(to right , red , indigo ,palevioletred );
         }
 
         .navbar {  
-            width: 71%;
+            width: 70.1%;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;
@@ -118,8 +122,8 @@
         <div class="split left">
             <div class="centered">
                 <img src="images_student/student_frgtpass.png">
-                <h1 style="font-family: Comic Sans MS ; color: white">Forget Password ? </h1>
-                <p style="font-family: Comic Sans MS ; color: white ; font-size: 20px;">Dont Worry I Gotch You , Be Patient , And Fill The Form Calmly ~</p>
+                <h2 style="font-family: Comic Sans MS ; color: white">Forget Password ? </h2>
+                <p style="font-family: Comic Sans MS ; color: white ; font-size: 20px;">Dont Worry I Gotch You,Be Patient,And Fill The Form Calmly ~</p>
             </div>
         </div>
 
