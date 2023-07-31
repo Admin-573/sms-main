@@ -5,6 +5,7 @@ $HOST='localhost';
 $STUDENT='student';
 $ADMIN='admin';
 $FACULTY='faculty';
+$FACULTY_ADD='faculty_add';
 $USER='root';
 $PASSWORD='';
 

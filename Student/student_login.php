@@ -162,6 +162,21 @@
                             margin-top: 22px">
                         </div>
                     </form>
+                            <form action="#" method="post">
+                                    <div style="margin-bottom: 15px">
+                                        <button class="btn signin" name="go_to_home" id="go_to_home" 
+                                        style="
+                                        padding-left: 32px;
+                                        padding-right: 32px;
+                                        padding-top: 7px;
+                                        padding-bottom: 7px;
+                                        font-size: 17px;
+                                        font-family: Comic Sans MS ; 
+                                        font-weight: bold ;   
+                                        border-radius: 12px ;">Go To Home
+                                        </button>
+                                    </div>
+                            </form>
             </div>
         </div>
     </body>
@@ -169,42 +184,37 @@
     <?php
         include "Student_init.php";
 
-        $createTable= "CREATE TABLE $STUDENT(
-            $STUDENT_EMAIL VARCHAR(50) PRIMARY KEY,
-            $STUDENT_PASSWORD TEXT)";
+        if(isset($_POST['btnLogin'])){
 
-            //$queryExe=mysqli_query($con,$createTable);
+            $EMAIL=$_POST[$STUDENT_EMAIL];
+            $PASSWORD=$_POST[$STUDENT_PASSWORD];
+            
+            $selectQuery="SELECT * FROM $STUDENT_ADD WHERE $STUDENT_EMAIL='$EMAIL' AND $STUDENT_PASSWORD='$PASSWORD' ";
+            $dbQuery=mysqli_query($con,$selectQuery);
+            $data=mysqli_num_rows($dbQuery);
 
-            if(isset($_POST['btnLogin'])){
-
-                $EMAIL=$_POST[$STUDENT_EMAIL];
-                $PASSWORD=$_POST[$STUDENT_PASSWORD];
-                
-                $selectQuery="SELECT * FROM $STUDENT WHERE $STUDENT_EMAIL='$EMAIL'";
-                $dbQuery=mysqli_query($con,$selectQuery);
-                $data=mysqli_num_rows($dbQuery);
-
-                if($data){
-                    ?>
+            if($data){
+                ?>
+                <script type="text/javascript">
+                    alert("Sucessfully Login")
+                    window.open("http://localhost/sms-main/Student/student_panel.php","_self")
+                </script>
+            <?php
+            }else{
+                ?>
                     <script type="text/javascript">
-                        alert("Student account already exist")
-                        window.open("http://localhost/sms-main/Student/student_login.php","_self")
+                        alert("Something went wrong ! try Again ...")
                     </script>
                 <?php
-                }else{
-                    $insertInTable= "INSERT INTO $STUDENT VALUES('$EMAIL','$PASSWORD')";
-                    $queryExe=mysqli_query($con,$insertInTable);
-                    if($queryExe){
-                    ?>
-                        <script type="text/javascript">
-                            alert("Successfully Register !")
-                            window.open("http://localhost/sms-main/Student/student_panel.php","_self")
-                        </script>
-                    <?php
-                }
             }
         }
-
+        if(isset($_POST['go_to_home'])){
+            ?>
+                <script type="text/javascript">
+                    window.open("http://localhost/sms-main/main.php","_self")
+                </script>
+            <?php
+        }
     ?>
     </body>
 </html>

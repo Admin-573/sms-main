@@ -8,7 +8,7 @@
         body {font-family: "Comic Sans MS"}
 
         #grad_back {
-            background: linear-gradient(to right , red ,indigo , salmon);
+            background: linear-gradient(to right , #F9E795 , white , #F96167);
         }
 
         .navbar {  
@@ -44,7 +44,7 @@
 
     <body id="grad_back">
 
-        <div class="navbar" style="border-radius:25px">
+        <div class="navbar" style="border-radius:25px ; border-color:#FF5733 ; border-style:solid ; border-width:2px">
 
             <a style="background-color:#E9967A">
                 <h7 style="margin-left: 20px;">Student Management System</h7>

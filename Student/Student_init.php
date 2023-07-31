@@ -2,7 +2,7 @@
 
 $DATABASE_NAME='sms';
 $HOST='localhost';
-$STUDENT='student';
+$STUDENT_ADD='student_add';
 $ADMIN='admin';
 $FACULTY='faculty';
 $USER='root';

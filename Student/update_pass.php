@@ -22,7 +22,7 @@
         }.split {
                 height: 85.3%;
                 width: 40%;
-                margin-top: 65px;
+                margin-top: 70px;
                 position: absolute;
                 z-index: 1;
                 top: 0;
@@ -34,14 +34,14 @@
                 left: 0;
                 margin-left: 130px;
                 border-radius: 10%;
-                background-color: Royalblue;
+                background-color: #101820;
             }
 
             .right {
                 right: 0;
                 margin-right: 130px;
                 border-radius: 10%;
-                background-color: #A38AC3;
+                background-color: orange;
             }
 
             .centered {
@@ -55,7 +55,7 @@
         body {font-family: "Comic Sans MS"}
 
         #grad_back {
-            background: linear-gradient(to right , red , indigo ,palevioletred );
+            background: linear-gradient(to right  , orange , white , #101820);
         }
 
         .navbar {  
@@ -91,7 +91,7 @@
 
     <body id="grad_back">
 
-        <div class="navbar" style="border-radius:25px">
+        <div class="navbar" style="border-radius:25px ; border-color:#FF5733 ; border-style:solid ; border-width:2px">
 
             <a style="background-color:#E9967A">
                 <h7 style="margin-left: 20px;">Student Management System</h7>
@@ -193,7 +193,7 @@
         $CPASSWD=$_POST['studcpassword'];
 
             if($PASSWD==$CPASSWD){
-                $sql="UPDATE $STUDENT SET $STUDENT_PASSWORD='$PASSWD' WHERE $STUDENT_EMAIL='$EMAIL'";
+                $sql="UPDATE $STUDENT_ADD SET $STUDENT_PASSWORD='$PASSWD' WHERE $STUDENT_EMAIL='$EMAIL'";
                 $dbQuery=mysqli_query($con,$sql);
                 if(!$dbQuery){
                 ?>

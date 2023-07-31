@@ -8,11 +8,10 @@
         body {font-family: "Comic Sans MS"}
 
         #grad_back {
-            background: linear-gradient(to right , red ,indigo , salmon);
+            background: linear-gradient(to right ,  #EEA47F , white , #00539C);
         }
-
         .navbar {  
-            width: 60%;
+            width: 67.7%;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;
@@ -44,7 +43,7 @@
 
     <body id="grad_back">
 
-        <div class="navbar" style="border-radius:25px">
+        <div class="navbar" style="border-radius:25px ; border-color:#FF5733 ; border-style:solid ; border-width:2px">
 
             <a style="background-color:#E9967A">
                 <h7 style="margin-left: 20px;">Student Management System</h7>
@@ -70,7 +69,13 @@
                 Student  
             </a>
 
+            <a href="admin_login.php">
+                <i class="fa fa-fw fa-power-off"></i> 
+                Logout  
+            </a>
+
         </div>
 
+    
     </body>
 </html> 

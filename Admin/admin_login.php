@@ -153,9 +153,7 @@
                 <table>
                     <tr>
                         <form action="#" method="post">
-
                             <div style="margin-bottom: 17px">
-
                                 <button class="btn already" name="newAccount" id="newAccount" 
                                     style="
                                     padding-left: 48px;
@@ -166,7 +164,23 @@
                                     font-family: Comic Sans MS ; 
                                     font-weight: bold ;   
                                     border-radius: 12px ; 
-                                    margin-top: 0px">New Admin ? 
+                                    margin-top: 0px">New Admin ?
+                                </button>
+                            </div>
+                        </form>
+
+                        <form action="#" method="post">
+                            <div style="margin-bottom: 15px">
+                                <button class="btn signin" name="go_to_home" id="go_to_home" 
+                                style="
+                                padding-left: 32px;
+                                padding-right: 32px;
+                                padding-top: 7px;
+                                padding-bottom: 7px;
+                                font-size: 17px;
+                                font-family: Comic Sans MS ; 
+                                font-weight: bold ;   
+                                border-radius: 12px ;">Go To Home
                                 </button>
                             </div>
                         </form>
@@ -219,11 +233,20 @@
             }
         }
     }
+
     if(isset($_POST['newAccount'])){
         ?>
             <script type="text/javascript">
-                    window.open("http://localhost/sms-main/Admin/admin_signup.php","_self")
-                </script>
+                window.open("http://localhost/sms-main/Admin/admin_signup.php","_self")
+            </script>
+        <?php
+    }
+
+    if(isset($_POST['go_to_home'])){
+        ?>
+            <script type="text/javascript">
+                window.open("http://localhost/sms-main/main.php","_self")
+            </script>
         <?php
     }
     ?>

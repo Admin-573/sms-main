@@ -146,6 +146,21 @@
                             </tr> 
                         </td>
                      </form>
+                            <form action="#" method="post">
+                                    <div style="margin-bottom: 15px">
+                                        <button class="btn signin" name="go_to_home" id="go_to_home" 
+                                        style="
+                                        padding-left: 32px;
+                                        padding-right: 32px;
+                                        padding-top: 7px;
+                                        padding-bottom: 7px;
+                                        font-size: 17px;
+                                        font-family: Comic Sans MS ; 
+                                        font-weight: bold ;   
+                                        border-radius: 12px ;">Go To Home
+                                        </button>
+                                    </div>
+                            </form>
                     </table>
                 </fieldset>
             </div>
@@ -155,41 +170,39 @@
     <?php
         include "Faculty_init.php";
 
-        $createTable= "CREATE TABLE $FACULTY(
-            $FACULTY_EMAIL VARCHAR(50) PRIMARY KEY,
-            $FACULTY_PASSWORD TEXT)";
+        if(isset($_POST['btnLogin'])){
 
-            //$queryExe=mysqli_query($con,$createTable);
+            $EMAIL=$_POST[$FACULTY_EMAIL];
+            $PASSWORD=$_POST[$FACULTY_PASSWORD];
+            
+            $selectQuery="SELECT * FROM $FACULTY_ADD WHERE $FACULTY_EMAIL='$EMAIL' AND $FACULTY_PASSWORD='$PASSWORD' ";
+            $dbQuery=mysqli_query($con,$selectQuery);
+            $data=mysqli_num_rows($dbQuery);
 
-            if(isset($_POST['btnLogin'])){
-
-                $EMAIL=$_POST[$FACULTY_EMAIL];
-                $PASSWORD=$_POST[$FACULTY_PASSWORD];
-                
-                $selectQuery="SELECT * FROM $FACULTY WHERE $FACULTY_EMAIL='$EMAIL'";
-                $dbQuery=mysqli_query($con,$selectQuery);
-                $data=mysqli_num_rows($dbQuery);
-
-                if($data){
-                    ?>
+            if($data){
+                ?>
+                <script type="text/javascript">
+                    alert("Sucessfully Login")
+                    window.open("http://localhost/sms-main/Faculty/Faculty_panel.php","_self")
+                </script>
+            <?php
+            }else{
+                ?>
                     <script type="text/javascript">
-                        alert("Faculty account already exist")
-                        window.open("http://localhost/sms-main/Faculty/faculty_login.php","_self")
+                        alert("Something went wrong ! try Again ...")
                     </script>
                 <?php
-                }else{
-                    $insertInTable= "INSERT INTO $FACULTY VALUES('$EMAIL','$PASSWORD')";
-                    $queryExe=mysqli_query($con,$insertInTable);
-                    if($queryExe){
-                    ?>
-                        <script type="text/javascript">
-                            alert("Successfully Register !")
-                            window.open("http://localhost/sms-main/Faculty/faculty_panel.php","_self")
-                        </script>
-                    <?php
-                }
             }
         }
+
+        if(isset($_POST['go_to_home'])){
+            ?>
+                <script type="text/javascript">
+                    window.open("http://localhost/sms-main/main.php","_self")
+                </script>
+            <?php
+        }
+
     ?>
     </body>
 </html>

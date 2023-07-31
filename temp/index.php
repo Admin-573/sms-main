@@ -294,11 +294,11 @@
                     $data=mysqli_num_rows($dbquery);
                     if($data){
                         ?>
-                        <script type="text/javascript">
-                            alert("User account already exist, Please kindly contact to administrator")
-                            window.open("http://localhost/php/sms/Home/Login.php","_self")
+                            <script type="text/javascript">
+                                alert("User account already exist, Please kindly contact to administrator")
+                                window.open("http://localhost/php/sms/Home/Login.php","_self")
                             </script>
-                    <?php
+                        <?php
                     }else{
                         $insertInTable= "INSERT INTO $STUDENT VALUES('$FNAME','$LNAME','$EMAIL',$MOBILE,'$GENDER','$COLLEGE','$COURSE',$ID,$DIV,$RNO,'$ADDRESS','$CITY','$STATE',$PINCODE,'$PASSWORD')";
                         $queryExe=mysqli_query($con,$insertInTable);
