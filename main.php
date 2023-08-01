@@ -39,7 +39,7 @@
         </h1>
         <table class="center">
             <td>
-                <img src="images/home_main.png"/>
+                <img src="home_main.png"/>
             </td>
             <td>
                 <fieldset style="border-radius:15px ; border-color:white ; border-width:3px ; background-color: #FF7474 ; margin-bottom: 25px">
