@@ -16,7 +16,7 @@
             height: 350px; 
             overflow-y: auto;
             padding: 10px;
-            border: 4px solid white;
+            border: 2px solid white;
         }
         .card {
             border-radius: 12px;
@@ -146,7 +146,7 @@
                 <h3 style="font-family: Comic Sans MS ; color: white ;">~ Genrated By Admin Notice For Faculty ~</h3>
 
                 <fieldset style="margin-left: -30%; margin-right: -30% ; border-radius:15px ; border-color:white ; border-width:4px ; background-color: #FF7474 ; margin-bottom: 25px">
-                 <div class="scrollable-container" style="margin-top: 7px; margin-bottom:7px; margin-left:7px; margin-right:7px; background-color: #101820;">
+                 <div class="scrollable-container" style="margin-top: 5px; margin-bottom: 5px; margin-left: 5px; margin-right: 5px; background-color: #36454F;">
                     <legend style="font-family: Comic Sans MS ; color: white ; margin-bottom: 12px;">
                         <fieldset style="border-radius:15px ; border-color:white ; border-width:4px ; background-color: crimson">Read Notice Here</fieldset>
                     </legend>

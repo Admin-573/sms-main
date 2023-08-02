@@ -153,7 +153,7 @@
                                                     style="margin-inline-start: 7px ; padding: 7px ; margin-top: 5px;
                                                             width: 250px ; border-radius:12px ; 
                                                             outline-color: transparent ; border-color: transparent ; "  
-                                                            placeholder="Atleast 8 Chars Required !" required>
+                                                            placeholder="3+ Chars Ensure Better Security !" required>
                                             </div>
                                         </td>
                                     </table>
