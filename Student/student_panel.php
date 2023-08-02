@@ -8,7 +8,7 @@
         body {font-family: "Comic Sans MS"}
 
         #grad_back {
-            background: linear-gradient(to right , #FEE715 , white , #101820);
+            background: linear-gradient(to right , orange , white , #101820);
         }
 
         .navbar {  

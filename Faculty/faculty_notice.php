@@ -11,6 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        .scrollable-container { 
+            border-radius: 8px;
+            height: 350px; 
+            overflow-y: auto;
+            padding: 10px;
+            border: 4px solid white;
+        }
         .card {
             border-radius: 12px;
             background-color: white;
@@ -139,8 +146,8 @@
                 <h3 style="font-family: Comic Sans MS ; color: white ;">~ Genrated By Admin Notice For Faculty ~</h3>
 
                 <fieldset style="margin-left: -30%; margin-right: -30% ; border-radius:15px ; border-color:white ; border-width:4px ; background-color: #FF7474 ; margin-bottom: 25px">
-
-                    <legend style="font-family: Comic Sans MS ; color: white">
+                 <div class="scrollable-container" style="margin-top: 7px; margin-bottom:7px; margin-left:7px; margin-right:7px; background-color: #101820;">
+                    <legend style="font-family: Comic Sans MS ; color: white ; margin-bottom: 12px;">
                         <fieldset style="border-radius:15px ; border-color:white ; border-width:4px ; background-color: crimson">Read Notice Here</fieldset>
                     </legend>
 
@@ -185,6 +192,7 @@
                             }
                         }
                     ?>
+                 </div>
                 </fieldset>
             </div>
         </div>
