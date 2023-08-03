@@ -7,6 +7,28 @@
 
         body {font-family: "Comic Sans MS"}
 
+        .box_left{
+            color: #F9E795;
+            margin-top: 10px;
+            margin-left: 200px;
+            background-color: #F96167;
+            height: 144px;
+            width: 450px;
+            border: 4px solid #F96167;
+            border-radius: 25px;
+        }
+        .box_right{
+            color: #F96167;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 140px;
+            background-color: #F9E795;
+            height: 144px;
+            width: 450px;
+            border: 4px solid #F9E795;
+            border-radius: 25px;
+        }
+
         #grad_back {
             background: linear-gradient(to right , #F9E795 , white , #F96167);
         }
@@ -72,7 +94,34 @@
 
         </div>
 
-        
+        <table>
+            <td>
+                <div class="box_left">
+                    <h2>Java</h2>
+                </div>
+
+                <div class="box_left">
+                    <h2>Python</h2>
+                </div>
+
+                <div class="box_left">
+                    <h2>Cyber Security</h2>
+                </div>
+            </td>
+            <td>
+                <div class="box_right">
+                    <h2>Android</h2>
+                </div>
+
+                <div class="box_right">
+                    <h2>Php</h2>
+                </div>
+
+                <div class="box_right">
+                    <h2>C & C++</h2>
+                </div>
+            </td>
+        </table>
 
     </body>
 </html>
