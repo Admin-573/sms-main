@@ -6,48 +6,7 @@
     <style>
 
         body {font-family: "Comic Sans MS"}
-
-        .flip-card {
-        margin-top: 15px;
-        margin-left: 250px;
-        width: 300px;
-        height: 300px;
-        perspective: 1000px;
-        }
-
-        .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        }
-
-        .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-        }
-
-        .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        }
-
-        .flip-card-front {
-        background-color: #00539C;
-        color: black;
-        }
-
-        .flip-card-back {
-        background-color: #00539C;
-        color: white;
-        transform: rotateY(180deg);
-        }
-
+        
         #grad_back {
             background: linear-gradient(to right ,  #EEA47F , white , #00539C);
         }
@@ -115,18 +74,6 @@
                 Logout  
             </a>
 
-        </div>
-
-        <div class="flip-card" style="border-radius:25px">
-            <div class="flip-card-inner" style="border-radius:25px">
-                <div class="flip-card-front" style="border-radius:25px">
-                    <img src="images_admin/admin.png" style="width:300px;height:300px;">
-                </div>
-
-                <div class="flip-card-back" style="border-radius:25px">
-                    
-                </div>
-            </div>
         </div>
     
     </body>
