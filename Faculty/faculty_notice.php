@@ -20,6 +20,8 @@
         }
         .card {
             border-radius: 12px;
+            text-align: left;
+            padding-left: 10px;
             background-color: white;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             transition: 0.3s;
@@ -146,7 +148,7 @@
                 <h3 style="font-family: Comic Sans MS ; color: white ;">~ Genrated By Admin Notice For Faculty ~</h3>
 
                 <fieldset style="margin-left: -30%; margin-right: -30% ; border-radius:15px ; border-color:white ; border-width:4px ; background-color: #FF7474 ; margin-bottom: 25px">
-                 <div class="scrollable-container" style="margin-top: 5px; margin-bottom: 5px; margin-left: 5px; margin-right: 5px; background-color: #36454F;">
+                 <div class="scrollable-container" style="margin-top: 5px; margin-bottom: 5px; margin-left: 5px; margin-right: 5px; background-color: #101820;">
                     <legend style="font-family: Comic Sans MS ; color: white ; margin-bottom: 12px;">
                         <fieldset style="border-radius:15px ; border-color:white ; border-width:4px ; background-color: crimson">Read Notice Here</fieldset>
                     </legend>
@@ -162,7 +164,7 @@
                                                     <td class="card">
                                                         
                                                         <?php
-                                                            echo "Date : $rows[$FACULTY_NOTICE_DATE]"."</br>";
+                                                            echo "Date : $rows[$FACULTY_NOTICE_DATE]";
                                                         ?>
                                                     
                                                     </td>
@@ -171,7 +173,7 @@
                                                     <td>
                                                         
                                                         <?php                                                        
-                                                            echo "Notice : $rows[$FACULTY_NOTICE_NAME]"."</br>";                                                         
+                                                            echo "Notice : $rows[$FACULTY_NOTICE_NAME]";                                                         
                                                         ?>
                                                     
                                                     </td>
@@ -180,7 +182,7 @@
                                                     <td>
                                                         
                                                         <?php                                                    
-                                                            echo "Des : $rows[$FACULTY_NOTICE_DES]"."</br>";
+                                                            echo "Des : $rows[$FACULTY_NOTICE_DES]";
                                                         ?>
                                                     
                                                     </td>
