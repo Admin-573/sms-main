@@ -50,7 +50,8 @@
                 <h7 style="margin-left: 20px;">Student Management System</h7>
             </a>
 
-            <a class="active" style="margin-left: 6px" href="faculty_panel.php">
+            <a class="active" style="margin-left: 6px" 
+                href="faculty_panel.php">
                 <i class="fa fa-fw fa-home"></i> 
                 Faculty Panel 
             </a> 
@@ -60,7 +61,7 @@
                 Results
             </a> 
 
-            <a href="faculty_assignment.php">
+            <a href="faculty_assignments.php">
                 <i class="fa fa-fw fa-book"></i> 
                 Assignments
             </a> 
