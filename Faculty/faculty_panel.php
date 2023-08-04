@@ -12,7 +12,7 @@
         }
 
         .navbar {  
-            width: 67.7%;
+            width: 59.625%;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;
@@ -54,11 +54,6 @@
                 href="faculty_panel.php">
                 <i class="fa fa-fw fa-home"></i> 
                 Faculty Panel 
-            </a> 
-
-            <a href="faculty_results.php">
-                <i class="fa fa-fw fa-file-text"></i> 
-                Results
             </a> 
 
             <a href="faculty_assignments.php">

@@ -12,7 +12,7 @@
         }
 
         .navbar {  
-            width: 77.71%;
+            width: 80.8%;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;
@@ -60,9 +60,9 @@
                 Update Password
             </a> 
 
-            <a href="student_results.php">
+            <a href="student_assignments.php">
                 <i class="fa fa-fw fa-file"></i> 
-                See Results
+                See Assignments
             </a> 
 
             <a href="student_notices.php">
