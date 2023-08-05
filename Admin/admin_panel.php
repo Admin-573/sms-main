@@ -6,6 +6,10 @@
         body {
             font-family: "Comic Sans MS";
         }
+        img{
+            margin-top: 25px;
+            border-radius: 50%;
+        }
         .card {
             color:black;
             background-color: white;
@@ -139,7 +143,7 @@
                 <td>
                     <div class="box_left">
                         <div class="card">
-                            <img src="images_admin/admin.png" width=160px/>
+                            <img src="images_admin/rajat.jpg" width=160px/>
                             <div style="text-align:center ; font-family:Comic Sans MS ">
                                 <?php
                                     include "Admin_init.php";

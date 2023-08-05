@@ -8,6 +8,13 @@ $ADMIN='admin';
 $FACULTY='faculty';
 $FACULTY_ADD='faculty_add';
 
+$STUDENT_ADD='student_add';
+$STUDENT_MNO='student_mno';
+$STUDENT_NAME='student_name';
+$STUDENT_EMAIL='student_email';
+$STUDENT_PASSWORD='student_password';
+$STUDENT_RESULT='student_result';
+
 $FACULTY_NOTICE_ADD='faculty_notice_add';
 
 $FACULTY_NOTICE_DATE='faculty_notice_date';
