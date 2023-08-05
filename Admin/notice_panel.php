@@ -153,7 +153,7 @@
                                 style="margin-inline-start: 7px;padding: 7px; width: 250px;
                                         border-radius: 12px; outline-color: transparent;
                                         border-color: transparent; margin-bottom: 3px " 
-                                placeholder="Enter Description Of Notice" required>
+                                placeholder="Enter Description Of Notice">
                         </div>
 
                         <div>
@@ -208,7 +208,7 @@
                                     style="margin-inline-start: 7px;padding: 7px; width: 250px;
                                             border-radius: 12px; outline-color: transparent;
                                             border-color: transparent; margin-bottom: 3px " 
-                                    placeholder="Enter Description Of Notice" required>
+                                    placeholder="Enter Description Of Notice">
                             </div>
 
                             <div>

@@ -177,7 +177,7 @@
                                                     <td>
                                                         
                                                         <?php                                                    
-                                                            echo "Des : $rows[$FACULTY_NOTICE_DES]";
+                                                            echo "$rows[$FACULTY_NOTICE_DES]";
                                                         ?>
                                                     
                                                     </td>
