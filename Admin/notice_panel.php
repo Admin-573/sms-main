@@ -233,7 +233,7 @@
         <?php
             include "Admin_init.php";
             
-            $createTable_fc = "CREATE TABLE IF EXISTS $FACULTY_NOTICE_ADD($FACULTY_NOTICE_DATE DATE,$FACULTY_NOTICE_NAME TEXT,$FACULTY_NOTICE_DES TEXT)";
+            $createTable_fc = "CREATE TABLE IF NOT EXISTS $FACULTY_NOTICE_ADD($FACULTY_NOTICE_DATE DATE,$FACULTY_NOTICE_NAME TEXT,$FACULTY_NOTICE_DES TEXT)";
             $queryExe = mysqli_query($con,$createTable_fc);
 
             if(isset($_POST['add_notice_faculty'])){
@@ -273,7 +273,7 @@
                 }
             }
 
-            $createTable_st = "CREATE TABLE IF EXISTS $STUDENT_NOTICE_ADD($STUDENT_NOTICE_DATE DATE,$STUDENT_NOTICE_NAME TEXT,$STUDENT_NOTICE_DES TEXT)";
+            $createTable_st = "CREATE TABLE IF NOT EXISTS $STUDENT_NOTICE_ADD($STUDENT_NOTICE_DATE DATE,$STUDENT_NOTICE_NAME TEXT,$STUDENT_NOTICE_DES TEXT)";
             $queryExe = mysqli_query($con,$createTable_st);
 
             if(isset($_POST['add_notice_student'])){
