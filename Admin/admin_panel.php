@@ -131,7 +131,7 @@
                 Student  
             </a>
 
-            <a href="admin_login.php">
+            <a href="admin_logout.php">
                 <i class="fa fa-fw fa-power-off"></i> 
                 Logout  
             </a>

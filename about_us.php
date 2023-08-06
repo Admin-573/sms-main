@@ -93,7 +93,7 @@
                         <h2>Piyush Makwana</h2>
                         <p class="title">Back-end Developer</p>
                         <p>Backend developer responsibilities include creating, maintaining, testing, and debugging the entire back end of an application or system. This includes the core application logic, databases, data and application integration, API, and other processes.</p>
-                        <p>mkpiyush01@gmail.com</p>
+                        <p>insider0piyush@gmail.com</p>
                         <p><a href="contact_us.php"><button class="button">Contact</button></a></p>
                     </div>
                 </div>

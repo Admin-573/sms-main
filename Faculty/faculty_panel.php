@@ -130,7 +130,7 @@
                 Notices  
             </a>
 
-            <a href="faculty_login.php">
+            <a href="faculty_logout.php">
                 <i class="fa fa-fw fa-power-off"></i> 
                 Logout  
             </a>

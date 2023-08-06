@@ -182,6 +182,7 @@
     </body>
 
     <?php
+    session_start();
         include "Student_init.php";
 
         if(isset($_POST['btnLogin'])){
@@ -194,6 +195,8 @@
             $data=mysqli_num_rows($dbQuery);
 
             if($data){
+                $_SESSION['email'] = $EMAIL;
+                $_SESSION['isStudentLogin'] = 0;
                 ?>
                 <script type="text/javascript">
                     alert("Sucessfully Login")

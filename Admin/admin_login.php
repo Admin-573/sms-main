@@ -192,6 +192,7 @@
     </body>
 
         <?php
+        session_start();
         include "Admin_init.php" ;
 
         if(isset($_POST['btnLogin'])){
@@ -204,6 +205,8 @@
             $data=mysqli_num_rows($dbQuery);
 
             if($data){
+                $_SESSION['email'] = $EMAIL;
+                $_SESSION['isAdminLogin'] = 0;
                 ?>
                     <script type="text/javascript">    
                         alert('Successfully Login');
