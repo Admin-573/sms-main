@@ -62,7 +62,7 @@
     <body id="grad_back">
         <div id="mySidenav" class="sidenav">
             <a href="about_us.php" id="about">About Us</a>
-            <a href="contact_us.php" id="contact">Contact Us</a>
+            <a href="contact_us.php" id="contact">My Place</a>
         </div>
         <h1 style="margin-top: 20px; text-align:center ; font-family:Comic Sans MS ; color: white"> 
             Welcome To Student Management System 
