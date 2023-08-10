@@ -31,7 +31,7 @@
             width: 425px;
             margin-top: 10px;
             margin-left: 10px;
-            border: 4px solid #101820;
+            border: 2px solid orangered;
             border-radius: 30px 0px 0px 30px;
             overflow: auto;
         }
@@ -42,7 +42,7 @@
             width: 425px;
             margin-top: 10px;
             margin-left: 10px;
-            border: 4px solid #101820;
+            border: 2px solid orangered;
             border-radius: 30px 0px 0px 30px;
             overflow: auto;
         }

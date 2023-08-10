@@ -143,7 +143,7 @@
                 <td>
                     <div class="box_left">
                         <div class="card">
-                            <img src="images_admin/rajat.jpg" width=160px/>
+                            <img src="images_admin/rajat.jpg" width=150px/>
                             <div style="text-align:center ; font-family:Comic Sans MS ">
                                 <?php
                                     include "Admin_init.php";

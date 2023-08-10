@@ -32,14 +32,14 @@
         .left {
             left: 0;
             margin-left: 130px;
-            border-radius: 10%;
+            border-radius: 4%;
             background-color:  #00539C;
         }
 
         .right {
             right: 0;
             margin-right: 130px;
-            border-radius: 10%;
+            border-radius: 4%;
             background-color: #EEA47F;
         }
 

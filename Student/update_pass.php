@@ -33,14 +33,14 @@
             .left {
                 left: 0;
                 margin-left: 130px;
-                border-radius: 10%;
+                border-radius: 4%;
                 background-color: #101820;
             }
 
             .right {
                 right: 0;
                 margin-right: 130px;
-                border-radius: 10%;
+                border-radius: 4%;
                 background-color: orange;
             }
 

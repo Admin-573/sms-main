@@ -377,7 +377,7 @@
 
         <?php
             include "Faculty_init.php";
-            $createTable = "CREATE TABLE IF EXISTS $JAVA_ASSIGNMENTS(java_ch TEXT,java_des DATE)";
+            $createTable = "CREATE TABLE IF NOT EXISTS $JAVA_ASSIGNMENTS(java_ch TEXT,java_des DATE)";
             $queryExe = mysqli_query($con,$createTable);
 
             if(isset($_POST['java_assign'])){
