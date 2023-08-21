@@ -55,27 +55,27 @@
             background-color: #F96167;
             height: 466px;
             width: 380px;
-            margin-left: 50px;
             border: 4px solid #F96167;
-            border-radius: 25px;
+            border-radius: 12px;
+            margin: 12px;
         }
         .box_middle{
             color: white;
             background-color: saddlebrown;
             height: 466px;
             width: 380px;
-            margin-left: 10px;
             border: 4px solid saddlebrown;
-            border-radius: 25px;
+            border-radius: 12px;
+            margin: 12px;
         }
         .box_right{
             color: white;
-            margin-left: 10px;
             background-color: orange;
             height: 466px;
             width: 380px;
             border: 4px solid orange;
-            border-radius: 25px;
+            border-radius: 12px;
+            margin: 12px;
         }
 
         #grad_back {
@@ -83,7 +83,7 @@
         }
 
         .navbar {  
-            width: 80.8%;
+            width: 1090.50px;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;
@@ -150,11 +150,12 @@
 
         <div style="margin-top:14px">
             <form action="student_panel.php" method="post">
+                <center>
                 <table>
                     <td>
                         <div class="box_left">
                             <div class="card">
-                                <img src="images_student/stud.jpg" width=150px/>
+                                <img src="images_student/stud.jpg" width=140px/>
                                 <div style="text-align:center ; font-family:Comic Sans MS ">
                                     <p contenteditable="true" style="margin-left:30px ; margin-right:30px">Student Name</p>
                                 </div>
@@ -321,6 +322,7 @@
                         </div>
                     </td>
                 </table>
+                </center>
             </form>
         </div>
     </body>

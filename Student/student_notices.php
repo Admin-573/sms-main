@@ -13,11 +13,11 @@
             border: 4px solid white;
         }
         .card {
-            border-radius: 12px;
+            padding: 4px;
+            border-radius: 8px;
             background-color: white;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             transition: 0.3s;
-            width: 100%;
         }
 
         .card:hover {
@@ -51,13 +51,13 @@
         .left {
             left: 0;
             margin-left: 130px;
-            border-radius: 10%;
+            border-radius: 8px;
             background-color:  #101820;
         }
         .right {
             right: 0;
             margin-right: 130px;
-            border-radius: 10%;
+            border-radius: 8px;
             background-color: orange;
         }
         .centered {
@@ -75,7 +75,7 @@
         }
 
         .navbar {  
-            width: 73.1%;
+            width: 986.9px;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;
@@ -139,10 +139,10 @@
             <div class="centered">
                 <h3 style="font-family: Comic Sans MS ; color: white ;">~ Genrated By Admin ! Notice For Student ~</h3>
 
-                <fieldset style="margin-left: -30%; margin-right: -30% ; border-radius:15px ; border-color:white ; border-width:4px ; background-color: #FF7474 ; margin-bottom: 25px ;">
-                 <div class="scrollable-container" style="margin-top: 7px; margin-bottom:7px; margin-left:7px; margin-right:7px; background-color: #101820;">
+                <fieldset style="margin-left: -30%; margin-right: -30% ; border-radius:15px ; border-color:white ; border-width:4px ; background-color: #14397d ; margin-bottom: 25px ;">
+                 <div class="scrollable-container" style="margin-top: 7px; margin-bottom:7px; margin-left:7px; margin-right:7px; background-color: #77b5d9;">
                     <legend style="font-family: Comic Sans MS ; color: white ; margin-bottom:12px">
-                        <fieldset style="border-radius:15px ; border-color:white ; border-width:4px ; background-color: crimson">Read Notice Here</fieldset>
+                        <fieldset style="border-radius:15px ; border-color:white ; border-width:4px ; background-color: #14397d">Read Notice Here</fieldset>
                     </legend>
 
                     <?php
@@ -156,8 +156,8 @@
                         if($dbquery){
                             while($rows = mysqli_fetch_array($queryExe)){
                                 ?>   
-                                    <fieldset style="border-radius:15px ; border-color:white ; border-width:4px ; background-color: #F9E795 ; margin-bottom: 10px ;">
-                                        <table> 
+                                    <fieldset style="border-radius:15px ; border-color:white ; border-width:4px ; background-color: #f4898b ; margin-bottom: 10px ;">
+                                        <table style="text-align:left"> 
                                             <tr>
                                                 <td class="card">
                                                         
@@ -180,7 +180,7 @@
                                                 <td>
                                                         
                                                     <?php                                                    
-                                                        echo "$rows[$STUDENT_NOTICE_DES]"."</br>";
+                                                        echo "Des : $rows[$STUDENT_NOTICE_DES]"."</br>";
                                                     ?>
                                                     
                                                 </td>
@@ -199,10 +199,10 @@
         <div class="split right">
             <div class="centered">
             <h3 style="font-family: Comic Sans MS ; color: white ;">~ Genrated By Faculty ! Notice For Student ~</h3>
-                <fieldset style="margin-left: -30%; margin-right: -30% ; border-radius:15px ; border-color:white ; border-width:4px ; background-color: #FF7474 ; margin-bottom: 25px">
-                 <div class="scrollable-container" style="margin-top: 7px; margin-bottom:7px; margin-left:7px; margin-right:7px; background-color: #101820;">
+                <fieldset style="margin-left: -30%; margin-right: -30% ; border-radius:15px ; border-color:white ; border-width:4px ; background-color: #14397d ; margin-bottom: 25px">
+                 <div class="scrollable-container" style="margin-top: 7px; margin-bottom:7px; margin-left:7px; margin-right:7px; background-color: #77b5d9;">
                     <legend style="font-family: Comic Sans MS ; color: white ; margin-bottom:12px">
-                        <fieldset style="border-radius:15px ; border-color:white ; border-width:4px ; background-color: crimson">Read Notice Here</fieldset>
+                        <fieldset style="border-radius:15px ; border-color:white ; border-width:4px ; background-color: #14397d">Read Notice Here</fieldset>
                     </legend>
                     <?php
 
@@ -215,8 +215,8 @@
                             while($rows = mysqli_fetch_array($queryExe)){
                                 ?>
                                     <div>    
-                                        <fieldset style="border-radius:15px ; border-color:white ; border-width:4px ; background-color: #F9E795 ; margin-bottom: 10px">
-                                            <table> 
+                                        <fieldset style="border-radius:15px ; border-color:white ; border-width:4px ; background-color: #f4898b ; margin-bottom: 10px">
+                                            <table style="text-align: left;"> 
                                                 <tr>
                                                     <td class="card">
                                                         
@@ -239,7 +239,7 @@
                                                     <td>
                                                         
                                                         <?php                                                    
-                                                            echo "$rows[$FC_STUDENT_NOTICE_DES]"."</br>";
+                                                            echo "Des : $rows[$FC_STUDENT_NOTICE_DES]"."</br>";
                                                         ?>
                                                     
                                                     </td>

@@ -33,17 +33,16 @@
             opacity: 0.7;
             }
         .box_left{
+            margin: 8px;
             color: white;
             background-color: #F96167;
             height: 471.1px;
             width: 380px;
-            margin-left: 30px;
             border: 4px solid #F96167;
             border-radius: 25px;
         }
         .box_right{
             color: white;
-            margin-left: 10px;
             padding-left: 8px;
             padding-right: 8px;
             background-color: orange;
@@ -56,7 +55,7 @@
             background: linear-gradient(to right ,  #EEA47F , white , #00539C);
         }
         .navbar {  
-            width: 67.7%;
+            width: 914px;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;
@@ -138,12 +137,13 @@
 
         </div>
 
-        <div style="margin-top:10px ; margin-left:10px ">
+        <div style="margin-top: 16px">
+        <center>
             <table>
                 <td>
                     <div class="box_left">
                         <div class="card">
-                            <img src="images_admin/rajat.jpg" width=150px/>
+                            <img src="images_admin/rajat.jpg" width=140px/>
                             <div style="text-align:center ; font-family:Comic Sans MS ">
                                 <?php
                                     include "Admin_init.php";
@@ -253,6 +253,7 @@
                     </div>
                 </td>
             </table>
+        </center>   
         </div>
         
     </body>

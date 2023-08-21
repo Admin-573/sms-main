@@ -33,14 +33,14 @@
             .left {
                 left: 0;
                 margin-left: 130px;
-                border-radius: 4%;
+                border-radius: 8px;
                 background-color: #101820;
             }
 
             .right {
                 right: 0;
                 margin-right: 130px;
-                border-radius: 4%;
+                border-radius: 8px;
                 background-color: orange;
             }
 
@@ -59,7 +59,7 @@
         }
 
         .navbar {  
-            width: 73.16%;
+            width: 988px;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;

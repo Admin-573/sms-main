@@ -31,32 +31,35 @@
             
         .box_left{
             color: white;
-            margin-top: 10px;
-            margin-left: 200px;
             background-color: #F96167;
             height: 144px;
             width: 450px;
+            margin-bottom:8px;
+            margin-top:16px;
+            margin-right: 4px;
             border: 4px solid #F96167;
             border-radius: 25px;
+            padding: 8px;
         }
         .box_right{
             color: white;
-            margin-top: 10px;
-            margin-left: 20px;
-            margin-right: 140px;
             background-color: orange;
             height: 144px;
             width: 450px;
+            margin-bottom: 8px;
+            margin-top: 16px;
+            margin-left: 4px;
             border: 4px solid orange;
             border-radius: 25px;
+            padding: 8px;
         }
 
         #grad_back {
-            background: linear-gradient(to right , #F9E795 , white , #F96167);
+            background: linear-gradient(to right , orange , white , #F96167);
         }
 
         .navbar {  
-            width: 51.92%;
+            width: 700.9px;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;
@@ -111,6 +114,7 @@
 
         </div>
 
+        <center>
         <table>
             <td>
                 <div class="box_left">
@@ -374,6 +378,7 @@
                 </div>
             </td>
         </table>
+        </center>
 
         <?php
             include "Faculty_init.php";

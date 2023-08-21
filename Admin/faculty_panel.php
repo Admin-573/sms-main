@@ -31,15 +31,15 @@
 
         .left {
             left: 0;
-            margin-left: 130px;
-            border-radius: 4%;
+            margin-left: 9.5%;
+            border-radius: 8px;
             background-color:  #00539C;
         }
 
         .right {
             right: 0;
-            margin-right: 130px;
-            border-radius: 4%;
+            margin-right: 9.5%;
+            border-radius: 8px;
             background-color: #EEA47F;
         }
 
@@ -58,7 +58,7 @@
         }
 
         .navbar {  
-            width: 60%;
+            width: 810px;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;

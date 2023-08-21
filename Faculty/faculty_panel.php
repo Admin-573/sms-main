@@ -52,16 +52,16 @@
             }
         .box_left{
             color: white;
+            margin: 12px;
             background-color: #F96167;
             height: 471.1px;
             width: 380px;
-            margin-left: 30px;
             border: 4px solid #F96167;
             border-radius: 25px;
         }
         .box_right{
             color: white;
-            margin-left: 10px;
+            margin: 12px;
             padding-left: 8px;
             padding-right: 8px;
             background-color: orange;
@@ -76,7 +76,7 @@
         }
 
         .navbar {  
-            width: 59.625%;
+            width: 804.94px;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;
@@ -137,12 +137,13 @@
 
         </div>
 
-        <div style="margin-top:10px ; margin-left:10px ">
+        <div style="margin-top:10px ; margin-left:10px">
+        <center>
             <table>
                 <td>
                     <div class="box_left">
                         <div class="card">
-                            <img src="images_faculty/piyush.jpg" width=150px/>
+                            <img src="images_faculty/piyush.jpg" width=140px/>
                             <div style="text-align:center ; font-family:Comic Sans MS ">
                                 <p>Piyush Makwana</p>
                             </div>
@@ -240,6 +241,7 @@
                     </div>
                 </td>
             </table>
+        </center>
         </div>
 
     </body>

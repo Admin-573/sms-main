@@ -13,37 +13,31 @@
             border-color: white;
         }
         .field_des_out{
-            margin-top:10px; 
-            margin-left:10px ; 
-            margin-right:10px ; 
-            margin-bottom:10px ; 
-            border-radius:25px ;
+            margin : 20px; 
+            border-radius:15px ;
             border-color: white; 
             border-width: 3px;
-            background-color: #673147;
-            padding-left:5% ; 
-            padding-top:2%;
+            background-color: #104c91;
+            text-align: center;
         }
         .box_upside{
             color: white;
-            background-color: salmon;
+            background-color: cornflowerblue;
             height: 224.50px;
             width: 425px;
-            margin-top: 10px;
-            margin-left: 10px;
-            border: 2px solid orangered;
-            border-radius: 30px 0px 0px 30px;
+            margin: 8px;;
+            border: none;
+            border-radius: 8px;
             overflow: auto;
         }
         .box_downside{
             color: white;
-            background-color: salmon;
+            background-color: cornflowerblue;
             height: 224.50px;
             width: 425px;
-            margin-top: 10px;
-            margin-left: 10px;
-            border: 2px solid orangered;
-            border-radius: 30px 0px 0px 30px;
+            margin: 8px;
+            border: none;
+            border-radius: 8px;
             overflow: auto;
         }
 
@@ -52,7 +46,7 @@
         }
 
         .navbar {  
-            width: 73.1%;
+            width: 986.9px;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;
@@ -84,7 +78,7 @@
 
     <body id="grad_back">
 
-        <div class="navbar" style="border-radius:25px ; border-color:#FF5733 ; border-style:solid ; border-width:2px">
+        <div class="navbar" style="border-radius:25px ; border-color:#FF5733 ; border-style:solid ; border-width:2px ; margin-bottom:25px">
 
             <a style="background-color:#E9967A">
                 <h7 style="margin-left: 20px;">Student Management System</h7>
@@ -112,6 +106,7 @@
 
         </div>
 
+        <center>
         <table>
             <tr>
                 <td>
@@ -130,7 +125,7 @@
                                     while($rows = mysqli_fetch_array($queryExe)){
                                         echo "Chapters :: $rows[$JAVA_CH]"."</br>   ";
                                         echo "Submit On :: $rows[$JAVA_DES]"."</br>";
-                                        echo "__________________________________"."</br>";
+                                        echo "__________________________________";
                                     }
                                 }
                             ?>
@@ -153,7 +148,7 @@
                                     while($rows = mysqli_fetch_array($queryExe)){
                                         echo "Chapters :: $rows[$PYTHON_CH]"."</br>";
                                         echo "Submit On :: $rows[$PYTHON_DES]"."</br>";
-                                        echo "__________________________________"."</br>";
+                                        echo "__________________________________";
                                     }
                                 }
                             ?>
@@ -176,7 +171,7 @@
                                     while($rows = mysqli_fetch_array($queryExe)){
                                         echo "Chapters :: $rows[$KOTLIN_CH]"."</br>";
                                         echo "Submit On :: $rows[$KOTLIN_DES]"."</br>";
-                                        echo "__________________________________"."</br>";
+                                        echo "__________________________________";
                                     }
                                 }
                             ?>
@@ -201,7 +196,7 @@
                                     while($rows = mysqli_fetch_array($queryExe)){
                                         echo "Chapters :: $rows[$C_CH]"."</br>";
                                         echo "Submit On :: $rows[$C_DES]"."</br>";
-                                        echo "__________________________________"."</br>";
+                                        echo "__________________________________";
                                     }
                                 }
                             ?>
@@ -224,7 +219,7 @@
                                     while($rows = mysqli_fetch_array($queryExe)){
                                         echo "Chapters :: $rows[$PHP_CH]"."</br>";
                                         echo "Submit On :: $rows[$PHP_DES]"."</br>";
-                                        echo "__________________________________"."</br>";
+                                        echo "__________________________________";
                                     }
                                 }
                             ?>
@@ -247,7 +242,7 @@
                                     while($rows = mysqli_fetch_array($queryExe)){
                                         echo "Chapters :: $rows[$CS_CH]"."</br>";
                                         echo "Submit On :: $rows[$CS_DES]"."</br>";
-                                        echo "__________________________________"."</br>";
+                                        echo "__________________________________";
                                     }
                                 }
                             ?>
@@ -256,7 +251,7 @@
                 </td>
             </tr>
         </table>
-
+        </center>
     </body>
 </html>
 
