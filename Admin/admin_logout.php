@@ -3,8 +3,8 @@ session_start();
 if(isset($_SESSION['isAdminLogin']) == 1){
     ?>
         <script type="text/javascript">
-             alert("can't be logout")
-            window.open("http://localhost/sms-main/Admin/Admin_panel.php")
+            alert("can't be logout")
+            window.open("http://localhost/sms-main/Admin/Admin_login.php")
         </script>
     <?php
 }else{

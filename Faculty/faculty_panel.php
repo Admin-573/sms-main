@@ -66,7 +66,7 @@
             padding-right: 8px;
             background-color: orange;
             height: 471.1px;
-            width: 850px;
+            width: 870px;
             border: 4px solid orange;
             border-radius: 25px 0px 0px 25px;
         }
@@ -76,7 +76,7 @@
         }
 
         .navbar {  
-            width: 804.94px;
+            width: 983.5px;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;
@@ -120,6 +120,11 @@
                 Faculty Panel 
             </a> 
 
+            <a href="student_update.php">
+                <i class="fa fa-fw fa-briefcase"></i>
+                Update Student
+            </a>
+
             <a href="faculty_assignments.php">
                 <i class="fa fa-fw fa-book"></i> 
                 Assignments
@@ -153,7 +158,7 @@
                                 <a href="https://wa.me/9327998218?text=Hi" style="color:#F96167 ; margin-right:10px"><i class="fa fa-whatsapp"></i></a> 
                                 <a href="https://www.linkedin.com/in/rajat-kevat-97340a252/" style="color:#F96167 ; margin-right:10px"><i class="fa fa-linkedin"></i></a>  
                                 <a href="https://www.facebook.com/rajat.kevat.7" style="color:#F96167 ; margin-right:10px"><i class="fa fa-facebook"></i></a> 
-                                <p style="font-family:Comic Sans MS"> You Can Delete </br> Student From Here ~</p>
+                                <p style="font-family:Comic Sans MS"> You Can Operate </br> Student From Here ~</p>
                                 </br>
                             </div>
                         </div>
@@ -163,7 +168,8 @@
                 <td>
                     <div class="box_right" style="overflow-y:scroll ; overflow-x:hidden ">
                     <h2 style="text-align:center">Student Data ~</h2> 
-                        <table border="6px" cellspacing="0px" cellpadding="12px" style="margin-top:10px; margin-left: auto; margin-right: auto; margin-bottom:10px; background-color: transparent;border-radius: 6px; border-color: #81490F;">
+                        <center>
+                        <table border="6px" cellspacing="0px" cellpadding="8px" style="margin:8px; background-color: transparent;border-radius: 6px; border-color: #81490F;">
                             <tr>
                                 <th style="font-family: Comic Sans MS;
                                 font-size: 16px; font-weight: bold;" >
@@ -185,7 +191,7 @@
                                 font-size: 16px; font-weight: bold;">
                                     PASSWORD
                                 </th>
-                                <th colspan="0px" style="font-family: Comic Sans MS;
+                                <th colspan="2" style="font-family: Comic Sans MS;
                                 font-size: 16px; font-weight: bold;">
                                     ACTION
                                 </th>
@@ -199,8 +205,8 @@
                             if($data){
                                 while($row=mysqli_fetch_array($queryExe)){
                                     ?>
-                                    <tr style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                                    font-size: 17px; font-weight: bold;">
+                                    <tr style="text-align: center; font-family: Comic Sans MS;
+                                    font-size: 16px;">
                                         <td>
                                             <?php
                                                 echo $row[$STUDENT_NAME];
@@ -227,22 +233,30 @@
                                             ?>
                                         </td>
                                         <td> 
-                                            <a href="student_delete.php?student_email=<?php echo $row['student_email'] ?> "><button class="button des">Delete</button></a>
+                                            <a href="student_delete.php?student_email=<?php echo $row['student_email'] ?> "><button class="button des">DELETE</button></a>
                                         </td>
-                                    
+                                        <td> 
+                                            <a href="student_update.php?student_email=<?php echo $row['student_email'] ?> "><button class="button des">UPDATE</button></a>
+                                        </td>
                                     </tr>
                                     <?php
                                 }
                             }else{
-
+                                echo"
+                                    <center>
+                                        <h1> No Students ! </br> 
+                                            Please Contact Admin
+                                        </h1>
+                                    </center>
+                                ";
                             }
                             ?>
                         </table>
+                        </center>
                     </div>
                 </td>
             </table>
         </center>
         </div>
-
     </body>
 </html>

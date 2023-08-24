@@ -58,7 +58,7 @@
         }
 
         .navbar {  
-            width: 810px;
+            width: 982px;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;
@@ -109,6 +109,11 @@
             <a href="faculty_panel.php">
                 <i class="fa fa-fw fa-graduation-cap"></i> 
                 Faculty
+            </a>
+
+            <a href="faculty_update.php">
+                <i class="fa fa-fw fa-wrench"></i>
+                Faculty Update
             </a>
 
             <a class="active" href="student_panel.php">

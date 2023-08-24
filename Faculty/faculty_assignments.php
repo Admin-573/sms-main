@@ -59,7 +59,7 @@
         }
 
         .navbar {  
-            width: 700.9px;
+            width: 879.5px;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;
@@ -100,6 +100,11 @@
             <a style="margin-left: 6px" href="faculty_panel.php">
                 <i class="fa fa-fw fa-home"></i> 
                 Faculty Panel 
+            </a>
+
+            <a href="student_update.php">
+                <i class="fa fa-fw fa-briefcase"></i>
+                Update Student
             </a>
 
             <a class="active" href="faculty_assignments.php">

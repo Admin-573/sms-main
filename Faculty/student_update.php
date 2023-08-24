@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head> <title>Student Panel</title> </head>
+    <head> <title>Faculty Update Panel</title> </head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -33,14 +33,14 @@
             left: 0;
             margin-left: 9.5%;
             border-radius: 8px;
-            background-color:  #00539C;
+            background-color:  #F96167;
         }
 
         .right {
             right: 0;
             margin-right: 9.5%;
             border-radius: 8px;
-            background-color: #EEA47F;
+            background-color: #F9E795;
         }
 
         .centered {
@@ -54,11 +54,11 @@
         body {font-family: "Comic Sans MS"}
 
         #grad_back {
-            background: linear-gradient(to right , #EEA47F , white , #00539C);
+            background: linear-gradient(to right ,#F9E795 , white , #F96167);
         }
 
         .navbar {  
-            width: 982px;
+            width: 983.5px;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;
@@ -96,38 +96,39 @@
                 <h7 style="margin-left: 20px;">Student Management System</h7>
             </a>
 
-            <a style="margin-left: 57.5px" href="admin_panel.php">
+            <a style="margin-left: 6px" 
+                href="faculty_panel.php">
                 <i class="fa fa-fw fa-home"></i> 
-                Admin Panel 
+                Faculty Panel 
+            </a>
+            
+            <a class="active" href="student_update.php">
+                <i class="fa fa-fw fa-briefcase"></i>
+                Update Student
+            </a>
+
+            <a href="faculty_assignments.php">
+                <i class="fa fa-fw fa-book"></i> 
+                Assignments
             </a> 
 
-            <a href="notice_panel.php">
+            <a href="faculty_notice.php">
                 <i class="fa fa-fw fa-bell"></i> 
-                Notice
-            </a> 
-
-            <a class="active" href="faculty_panel.php">
-                <i class="fa fa-fw fa-graduation-cap"></i> 
-                Faculty
+                Notices  
             </a>
 
-            <a href="faculty_update.php">
-                <i class="fa fa-fw fa-wrench"></i>
-                Faculty Update
-            </a>
-
-            <a href="student_panel.php">
-                <i class="fa fa-fw fa-user"></i> 
-                Student  
+            <a href="faculty_logout.php">
+                <i class="fa fa-fw fa-power-off"></i> 
+                Logout  
             </a>
 
         </div>
 
         <div class="split left">
             <div class="centered">
-                <img src="images_admin/admin_facAdd.png">
-                <h2 style="font-family: Comic Sans MS ; color: white">Register Faculty Here</h2>
-                <p style="font-family: Comic Sans MS ; color: white ; font-size: 20px;">Dear Admin You Can Add Faculties Here ~</p>
+                <img src="images_faculty/faculty_studUpd.png" width="70%">
+                <h2 style="font-family: Comic Sans MS ; color: white">Update Student Here</h2>
+                <p style="font-family: Comic Sans MS ; color: white ; font-size: 20px;">Dear Faculty You Can Update Students Here ~</p>
             </div>
         </div>
 
@@ -135,58 +136,60 @@
 
             <div class="centered">
 
-                <h2 style="font-family: Comic Sans MS ; color: white ;"> ~ Ready To Add Faculty </h2>
+                <h2 style="font-family: Comic Sans MS ; color: crimson ;"> ~ Ready To Update Student </h2>
 
                 <fieldset style="border-radius:15px ; border-color:white ; border-width:4px ; background-color: #FF7474 ; margin-bottom: 25px">
 
                     <legend style="font-family: Comic Sans MS ; color: white">
-                        <fieldset style="border-radius:15px ; border-color:white ; border-width:4px ; background-color: crimson">Add Faculties</fieldset>
+                        <fieldset style="border-radius:15px ; border-color:white ; border-width:4px ; background-color: crimson">Update Students</fieldset>
                     </legend>
 
-                    <form action="#" method="post">
+                    <?php
+                        error_reporting(0);
+                        include 'C:/xampp/htdocs/sms-main/Admin/Admin_init.php';
+                            $emailGet=$_GET[$STUDENT_EMAIL];
+                            $query= "SELECT * FROM  $STUDENT_ADD WHERE $STUDENT_EMAIL= '$emailGet' ";
+                            $data= mysqli_query($con,$query);
+                            $row= mysqli_fetch_array($data);
+                        ?>
+
+                    <form method="POST">
 
                         <div style="margin-top: 7px;">
-                            <input type="text" name="faculty_mno" id="faculty_mno" 
+                            <input value="<?php echo $row[$STUDENT_MNO] ?>" type="text" name="student_mno" id="faculty_mno" 
                                 style="margin-inline-start: 7px;padding: 7px; width: 250px;
                                         border-radius: 12px; outline-color: transparent;
                                         border-color: transparent; margin-bottom: 3px" 
-                                placeholder="Enter PhoneNo Of Faculty" required>
+                                placeholder="Update PhoneNo Of Student" required></input>
                         </div>
 
                         <div style="margin-top: 7px;">
-                            <input type="text" name="faculty_name" id="faculty_name" 
+                            <input value="<?php echo $row[$STUDENT_NAME] ?>" type="text" name="student_name" id="student_name" 
                                 style="margin-inline-start: 7px;padding: 7px; width: 250px;
                                         border-radius: 12px; outline-color: transparent;
                                         border-color: transparent; margin-bottom: 3px" 
-                                placeholder="Enter Name Of Faculty" required>
+                                placeholder="Update Name Of Student" required>
                         </div>
             
                         <div style="margin-top: 7px;">
-                            <input type="email" name="faculty_email" id="faculty_email" 
+                            <input value="<?php echo $row[$STUDENT_EMAIL] ?>" type="email" name="student_email" id="student_email" 
                                 style="margin-inline-start: 7px;padding: 7px; width: 250px;
                                         border-radius: 12px; outline-color: transparent;
                                         border-color: transparent; margin-bottom: 3px" 
-                                placeholder="Enter Email ID Of Faculty" required>
+                                        placeholder="Email Not Selected !" disabled>
+                                        
                         </div>
             
                         <div style="margin-top: 7px;">
-                            <input type="password" name="faculty_password" id="faculty_password" 
+                            <input value="<?php echo $row[$STUDENT_RESULT] ?>" type="text" name="student_result" id="student_result" 
                                 style="margin-inline-start: 7px;padding: 7px; width: 250px;
                                     border-radius: 12px; outline-color: transparent;
                                     border-color: transparent; margin-bottom: 3px" 
-                                placeholder="Create Password For Faculty" required>
-                        </div>
-            
-                        <div style="margin-top: 7px;">
-                            <input type="text" name="faculty_qualification" id="faculty_qualification" 
-                                style="margin-inline-start: 7px;padding: 7px; width: 250px;
-                                    border-radius: 12px; outline-color: transparent;
-                                    border-color: transparent; margin-bottom: 3px" 
-                                placeholder="Enter Faculty Qualification" required>
+                                placeholder="Update Student Result" required>
                         </div>
             
                         <div>
-                            <input class="btn add_fac" type="submit" name="add_faculty" id="add_faculty" value="Add Faculty" 
+                            <input class="btn add_fac" type="submit" name="add_faculty" id="add_faculty" value="Update Student" 
                             style="
                                     padding-left: 28px;
                                     padding-right: 28px;
@@ -207,53 +210,28 @@
         </div>
 
         <?php
-            include "Admin_init.php";
-            $createTable = "CREATE TABLE IF NOT EXISTS $FACULTY_ADD($FACULTY_MNO BIGINT UNIQUE,
-                            $FACULTY_NAME TEXT,$FACULTY_EMAIL VARCHAR(256) PRIMARY KEY,$FACULTY_PASSWORD TEXT,$FACULTY_QUALIFICATION TEXT)";
-            
-            $queryExe = mysqli_query($con,$createTable);
+            include "C:/xampp/htdocs/sms-main/Admin/Admin_init.php";
             
             if(isset($_POST['add_faculty'])){
-                $MNO=$_POST[$FACULTY_MNO];
-                $NAME=$_POST[$FACULTY_NAME];
-                $EMAIL=$_POST[$FACULTY_EMAIL];
-                $PASSWORD=$_POST[$FACULTY_PASSWORD];
-                $QUALIFICATION=$_POST[$FACULTY_QUALIFICATION];
+                $MNO=$_POST[$STUDENT_MNO];
+                $NAME=$_POST[$STUDENT_NAME]; 
+                $EMAIL=$_POST[$STUDENT_EMAIL];
+                $RESULT=$_POST[$STUDENT_RESULT];
 
-                $sql = "SELECT * FROM $FACULTY_ADD WHERE $FACULTY_MNO=$MNO OR 
-                        $FACULTY_EMAIL='$EMAIL' ";
+                $sql = "UPDATE $STUDENT_ADD SET $STUDENT_MNO=$MNO , $STUDENT_NAME='$NAME' , $STUDENT_RESULT='$RESULT' WHERE $STUDENT_EMAIL = '$emailGet' ";
 
                 $dbquery = mysqli_query($con,$sql);
-                $data = mysqli_num_rows($dbquery);
-
-                if($data){
+                if(!$dbquery){
+                    echo "something what are going !!";
+                } else {
                     ?>
-                        <script>
-                            alert("This Faculty Added Already !");
-                            window.open("http://localhost/sms-main/Admin/faculty_panel.php","_self");
+                        <script type="text/javascript">
+                            alert("Student Updated !");
+                            window.open("http://localhost/sms-main/Faculty/faculty_panel.php","_self");
                         </script>
                     <?php
-                } else {
-                    $insertInTable = "INSERT INTO $FACULTY_ADD VALUES($MNO,'$NAME','$EMAIL','$PASSWORD','$QUALIFICATION')";
-                    $queryExe = mysqli_query($con,$insertInTable);
-                    if($queryExe){
-                        ?>
-                            <script>
-                                alert("Faculty Added Successfully !");
-                                window.open("http://localhost/sms-main/Admin/faculty_panel.php","_self");
-                            </script>
-                        <?php
-                    }else{
-                        ?>
-                            <script>
-                                alert("Something Went Wrong !");
-                                window.open("http://localhost/sms-main/Admin/student_panel.php","_self");
-                            </script>
-                        <?php
-                    } 
                 }
             }
         ?>
-
     </body>
 </html> 

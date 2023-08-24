@@ -155,7 +155,7 @@
                     <td>
                         <div class="box_left">
                             <div class="card">
-                                <img src="images_student/stud.jpg" width=140px/>
+                                <img src="images_student/dp_student.png" width=140px/>
                                 <div style="text-align:center ; font-family:Comic Sans MS ">
                                     <p contenteditable="true" style="margin-left:30px ; margin-right:30px">Student Name</p>
                                 </div>

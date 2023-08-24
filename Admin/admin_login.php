@@ -94,7 +94,7 @@
                     </legend>
                             
                     <table>
-                     <form action="#" method="post">
+                     <form action="" method="post">
                         <td>
                             <tr>
                                 <table>
@@ -219,39 +219,38 @@
                 $dbQuery=mysqli_query($con,$selectQuery);
                 $data=mysqli_num_rows($dbQuery);
                 if($data){
-                    if($data){
+                    
                         ?>
                             <script type="text/javascript">
                                 alert('Wrong Password')
                             </script>
         
                         <?php
-                }
-            }else{
+                }else{
                 ?>
                     <script type="text/javascript">
                         alert('Admin not found Pls SignUp !')
                     </script>
                 <?php
             }
+            }
         }
-    }
 
-    if(isset($_POST['newAccount'])){
-        ?>
-            <script type="text/javascript">
-                window.open("http://localhost/sms-main/Admin/admin_signup.php","_self")
-            </script>
-        <?php
-    }
+        if(isset($_POST['newAccount'])){
+            ?>
+                <script type="text/javascript">
+                    window.open("http://localhost/sms-main/Admin/admin_signup.php","_self")
+                </script>
+            <?php
+        }
 
-    if(isset($_POST['go_to_home'])){
-        ?>
-            <script type="text/javascript">
-                window.open("http://localhost/sms-main/main.php","_self")
-            </script>
-        <?php
-    }
+        if(isset($_POST['go_to_home'])){
+            ?>
+                <script type="text/javascript">
+                    window.open("http://localhost/sms-main/main.php","_self")
+                </script>
+            <?php
+        }
     ?>
     </body>
 </html>

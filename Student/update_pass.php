@@ -122,8 +122,8 @@
         <div class="split left">
             <div class="centered">
                 <img src="images_student/student_frgtpass.png">
-                <h2 style="font-family: Comic Sans MS ; color: white">Forget Password ? </h2>
-                <p style="font-family: Comic Sans MS ; color: white ; font-size: 20px;">Dont Worry I Gotch You,Be Patient,And Fill The Form Calmly ~</p>
+                <h2 style="font-family: Comic Sans MS ; color: white">Want To Change Password ? </h2>
+                <p style="font-family: Comic Sans MS ; color: white ; font-size: 20px;">Fill The Form Please ~</p>
             </div>
         </div>
 

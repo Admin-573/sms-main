@@ -37,7 +37,7 @@
             color: white;
             background-color: #F96167;
             height: 471.1px;
-            width: 380px;
+            width: 360px;
             border: 4px solid #F96167;
             border-radius: 25px;
         }
@@ -47,7 +47,7 @@
             padding-right: 8px;
             background-color: orange;
             height: 471.1px;
-            width: 850px;
+            width: 880px;
             border: 4px solid orange;
             border-radius: 25px 0px 0px 25px;
         }
@@ -55,7 +55,7 @@
             background: linear-gradient(to right ,  #EEA47F , white , #00539C);
         }
         .navbar {  
-            width: 914px;
+            width: 1086px;
             margin: auto;
             background-color: #E9967A;
             overflow: auto;
@@ -123,7 +123,12 @@
             <a href="faculty_panel.php">
                 <i class="fa fa-fw fa-graduation-cap"></i> 
                 Faculty
-            </a> 
+            </a>
+            
+            <a href="faculty_update.php">
+                <i class="fa fa-fw fa-wrench"></i>
+                Faculty Update
+            </a>
 
             <a href="student_panel.php">
                 <i class="fa fa-fw fa-user"></i> 
@@ -165,7 +170,7 @@
                                 <a href="https://wa.me/9327998218?text=Hi" style="color:#F96167 ; margin-right:10px"><i class="fa fa-whatsapp"></i></a> 
                                 <a href="https://www.linkedin.com/in/rajat-kevat-97340a252/" style="color:#F96167 ; margin-right:10px"><i class="fa fa-linkedin"></i></a>  
                                 <a href="https://www.facebook.com/rajat.kevat.7" style="color:#F96167 ; margin-right:10px"><i class="fa fa-facebook"></i></a> 
-                                <p style="font-family:Comic Sans MS"> You Can Delete </br> Faculty From Here ~</p>
+                                <p style="font-family:Comic Sans MS"> You Can Operate </br> Faculty From Here ~</p>
                                 </br>
                             </div>
                         </div>
@@ -175,30 +180,31 @@
                 <td>
                     <div class="box_right" style="overflow-y:scroll ; overflow-x:hidden ">
                     <h2 style="text-align:center">Faculty Data ~</h2> 
-                        <table border="6px" cellspacing="0px" cellpadding="12px" style="margin-top:10px; margin-left: auto; margin-right: auto; margin-bottom:10px; background-color: transparent;border-radius: 6px; border-color: thistle;">
+                        <center>
+                        <table border="6px" cellspacing="0px" cellpadding="10px" style="text-align:center; margin:8px; background-color: transparent; border-radius: 8px; border-color: thistle;">
                             <tr>
                                 <th style="font-family: Comic Sans MS;
-                                font-size: 16px; font-weight: bold;" >
+                                font-size: 14px; font-weight: bold;" >
                                     NAME
                                 </th>
                                 <th colspan="0px" style="font-family: Comic Sans MS;
-                                font-size: 16px; font-weight: bold;">
+                                font-size: 14px; font-weight: bold;">
                                     MOBILE NO
                                 </th>
                                 <th style="font-family: Comic Sans MS;
-                                font-size: 16px; font-weight: bold;">
+                                font-size: 14px; font-weight: bold;">
                                 EMAIL
                                 </th>
                                 <th style="font-family: Comic Sans Ms;
-                                font-size: 16px; font-weight: bold;">
+                                font-size: 14px; font-weight: bold;">
                                     QUALIFICATION
                                 </th>
                                 <th colspan="0px" style="font-family: Comic Sans MS;
-                                font-size: 16px; font-weight: bold;">
+                                font-size: 14px; font-weight: bold;">
                                     PASSWORD
                                 </th>
-                                <th colspan="0px" style="font-family: Comic Sans MS;
-                                font-size: 16px; font-weight: bold;">
+                                <th colspan="2" style="font-family: Comic Sans MS;
+                                font-size: 14px; font-weight: bold;">
                                     ACTION
                                 </th>
                             </tr>
@@ -207,54 +213,60 @@
                             include "Admin_init.php";
                             $sql = "SELECT * FROM $FACULTY_ADD";
                             $queryExe = mysqli_query($con,$sql);
-                            $data = mysqli_num_rows($queryExe);
-                            if($data){
-                                while($row=mysqli_fetch_array($queryExe)){
-                                    ?>
-                                    <tr style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                                    font-size: 17px; font-weight: bold;">
-                                        <td>
-                                            <?php
-                                                echo $row[$FACULTY_NAME];
-                                            ?>
-                                        </td>
-                                        <td>
-                                            <?php
-                                                echo $row[$FACULTY_MNO];
-                                            ?>
-                                        </td>
-                                        <td>
-                                            <?php
-                                                echo $row[$FACULTY_EMAIL];
-                                            ?>
-                                        </td>
-                                        <td>
-                                            <?php
-                                                echo $row[$FACULTY_QUALIFICATION];
-                                            ?>
-                                        </td>
-                                        <td>
-                                            <?php
-                                                echo $row[$FACULTY_PASSWORD];
-                                            ?>
-                                        </td>
-                                        <td> 
-                                            <a href="faculty_delete.php?faculty_email=<?php echo $row['faculty_email'] ?> "><button class="button des">Delete</button></a>
-                                        </td>
-                                    
-                                    </tr>
-                                    <?php
+                                $data = mysqli_num_rows($queryExe);
+                                if($data){
+                                    while($row=mysqli_fetch_array($queryExe)){
+                                        ?>
+                                        <tr style="font-family: Comic Sans MS;
+                                        font-size: 14px; font-weight: bold;">
+                                            <td>
+                                                <?php
+                                                    echo $row[$FACULTY_NAME];
+                                                ?>
+                                            </td>
+                                            <td>
+                                                <?php
+                                                    echo $row[$FACULTY_MNO];
+                                                ?>
+                                            </td>
+                                            <td>
+                                                <?php
+                                                    echo $row[$FACULTY_EMAIL];
+                                                ?>
+                                            </td>
+                                            <td>
+                                                <?php
+                                                    echo $row[$FACULTY_QUALIFICATION];
+                                                ?>
+                                            </td>
+                                            <td>
+                                                <?php
+                                                    echo $row[$FACULTY_PASSWORD];
+                                                ?>
+                                            </td>
+                                            <td> 
+                                                <a href="faculty_delete.php?faculty_email=<?php echo $row['faculty_email'] ?> "><button class="button des">DELETE</button></a>
+                                            </td>
+                                            <td>
+                                                <a href="faculty_update.php?faculty_email=<?php echo $row['faculty_email'] ?> "><button class="button des">UPDATE</button></a>
+                                            </td>
+                                        </tr>
+                                        <?php
+                                    }
+                                }else{
+                                    echo"<center>
+                                            <h1> No Records ! </br> 
+                                                Please Add Some Records 
+                                            </h1>
+                                        </center>";
                                 }
-                            }else{
-
-                            }
                             ?>
                         </table>
+                        </center>
                     </div>
                 </td>
             </table>
         </center>   
         </div>
-        
     </body>
 </html> 

@@ -167,7 +167,7 @@
         </center>
     </body>
     <?php
-        if(isset($_POST["btngo"])){
+        if(isset($_POST['btngo'])){
         ?>
             <script type="text/javascript">
                 alert('Thanks For Contacting Us ❤️');
