@@ -15,8 +15,8 @@
             border:2px solid #ccc;
             border-radius:4px;
             padding-left:8px;
-            padding-top:8px;
-            padding-bottom:8px;
+            padding-top:9px;
+            padding-bottom:9px;
             padding-right:52px;
             margin-left:12px;
             margin-top:4px;
@@ -193,7 +193,10 @@
                     <div class="box_right" style="overflow-y:scroll ; overflow-x:hidden ">
                     <h2 style="text-align:center">
                         <i class="fa fa-fw fa-search" style="margin-right:4px"></i>Search Faculty Data ~
-                        <input class="text_des" type="text" placeholder="Search..." id="search_faculty" name="search_faculty"/>
+                        <form style="margin-top:8px" method="post">
+                        <input class="text_des" type="text" placeholder="Search..." id="search_faculty_box" name="search_faculty_box"/>
+                        <button class="button des" type="button" id="btnSearch" name="btnSearch">Search</button>
+                        </form>
                     </h2>
                         <center>
                         <table border="6px" cellspacing="0px" cellpadding="10px" style="text-align:center; margin:8px; background-color: transparent; border-radius: 8px; border-color: thistle;">
@@ -271,12 +274,6 @@
                                             </td>
                                         </tr>
                                         <?php
-
-                                        ?>
-                                            <script type="text/javascript">
-                                                //
-                                            </script>
-                                        <?php
                                     }
                                 }else{
                                     echo"<center>
@@ -284,6 +281,16 @@
                                                 Please Add Some Records 
                                             </h1>
                                         </center>";
+                                }
+                            ?>
+                            <?php
+                                include "Admin_init.php";
+                                if(isset($_POST['btnSearch'])){
+                                    ?>
+                                        <script type="text/javascript">
+                                            alert("Good")
+                                        </script>
+                                    <?php
                                 }
                             ?>
                         </table>

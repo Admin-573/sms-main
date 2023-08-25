@@ -11,7 +11,9 @@ $STUDENT_ADD='student_add';
 $FACULTY_ADD='faculty_add';
 
 $STUDENT_NOTICE_ADD='student_notice_add';
+$SEARCH_STUDENT='search_student_box';
 $FACULTY_NOTICE_ADD='faculty_notice_add';
+$SEARCH_FACULTY="search_faculty_box";
 
 $USER='root';
 $PASSWORD='';
