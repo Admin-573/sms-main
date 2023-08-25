@@ -117,6 +117,8 @@
                             </legend>
                             <?php
                                 include "Student_init.php";
+                                $createTable = "CREATE TABLE IF NOT EXISTS $JAVA_ASSIGNMENTS(java_ch TEXT,java_des DATE)";
+                                $queryExe = mysqli_query($con,$createTable);
                                 $sql = "SELECT * FROM $JAVA_ASSIGNMENTS";
                                 $queryExe = mysqli_query($con,$sql);
                                 $dbquery = mysqli_query($con,$sql);
@@ -140,6 +142,8 @@
                             </legend>
                             <?php
                                 include "Student_init.php";
+                                $createTable = "CREATE TABLE IF NOT EXISTS $PYTHON_ASSIGNMENTS(python_ch TEXT,python_des DATE)";
+                                $queryExe = mysqli_query($con,$createTable);
                                 $sql = "SELECT * FROM $PYTHON_ASSIGNMENTS";
                                 $queryExe = mysqli_query($con,$sql);
                                 $dbquery = mysqli_query($con,$sql);
@@ -163,6 +167,8 @@
                             </legend>
                             <?php
                                 include "Student_init.php";
+                                $createTable = "CREATE TABLE IF NOT EXISTS $KOTLIN_ASSIGNMENTS(kotlin_ch TEXT,kotlin_des DATE)";
+                                $queryExe = mysqli_query($con,$createTable);
                                 $sql = "SELECT * FROM $KOTLIN_ASSIGNMENTS";
                                 $queryExe = mysqli_query($con,$sql);
                                 $dbquery = mysqli_query($con,$sql);
@@ -188,6 +194,8 @@
                             </legend>
                             <?php
                                 include "Student_init.php";
+                                $createTable = "CREATE TABLE IF NOT EXISTS $C_ASSIGNMENTS(c_ch TEXT,c_des DATE)";
+                                $queryExe = mysqli_query($con,$createTable);
                                 $sql = "SELECT * FROM $C_ASSIGNMENTS";
                                 $queryExe = mysqli_query($con,$sql);
                                 $dbquery = mysqli_query($con,$sql);
@@ -211,6 +219,8 @@
                             </legend>
                             <?php
                                 include "Student_init.php";
+                                $createTable = "CREATE TABLE IF NOT EXISTS $PHP_ASSIGNMENTS(php_ch TEXT,php_des DATE)";
+                                $queryExe = mysqli_query($con,$createTable);
                                 $sql = "SELECT * FROM $PHP_ASSIGNMENTS";
                                 $queryExe = mysqli_query($con,$sql);
                                 $dbquery = mysqli_query($con,$sql);
@@ -234,6 +244,8 @@
                             </legend>
                             <?php
                                 include "Student_init.php";
+                                $createTable = "CREATE TABLE IF NOT EXISTS $CS_ASSIGNMENTS(cs_ch TEXT,cs_des DATE)";
+                                $queryExe = mysqli_query($con,$createTable);
                                 $sql = "SELECT * FROM $CS_ASSIGNMENTS";
                                 $queryExe = mysqli_query($con,$sql);
                                 $dbquery = mysqli_query($con,$sql);

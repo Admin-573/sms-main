@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en-US" style="text-align: center;">
     <meta charset="UTF-8">
@@ -182,7 +183,6 @@
     </body>
 
     <?php
-    session_start();
         include "Student_init.php";
 
         if(isset($_POST['btnLogin'])){

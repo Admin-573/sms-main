@@ -207,6 +207,8 @@
                     <?php
 
                         include "Student_init.php";
+                        $createTable =  "CREATE TABLE IF NOT EXISTS $FC_NOTICE_STUDENT($FC_STUDENT_NOTICE_DATE DATE,$FC_STUDENT_NOTICE_NAME TEXT,$FC_STUDENT_NOTICE_DES TEXT)";
+                        $queryExe = mysqli_query($con,$createTable);
                         $sql = "SELECT * FROM $FC_NOTICE_STUDENT";
                         $queryExe = mysqli_query($con,$sql);
                         $dbquery = mysqli_query($con,$sql);

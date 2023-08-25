@@ -115,7 +115,6 @@
     </style>
 
     <body id="grad_back">
-
         <div class="navbar" style="border-radius:25px ; border-color:#FF5733 ; border-style:solid ; border-width:2px">
 
             <a style="background-color:#E9967A">
@@ -151,6 +150,7 @@
                 <i class="fa fa-fw fa-power-off"></i> 
                 Logout  
             </a>
+
 
         </div>
 
@@ -223,9 +223,13 @@
                                     ACTION
                                 </th>
                             </tr>
-
+                            
                             <?php
-                            include "Admin_init.php";
+
+                            include "Admin_init.php";            
+                            mysqli_query($con,
+                            "CREATE TABLE IF NOT EXISTS $FACULTY_ADD($FACULTY_MNO BIGINT UNIQUE,
+                            $FACULTY_NAME TEXT,$FACULTY_EMAIL VARCHAR(256) PRIMARY KEY,$FACULTY_PASSWORD TEXT,$FACULTY_QUALIFICATION TEXT)");
                             $sql = "SELECT * FROM $FACULTY_ADD";
                             $queryExe = mysqli_query($con,$sql);
                                 $data = mysqli_num_rows($queryExe);
@@ -266,6 +270,12 @@
                                                 <a href="faculty_update.php?faculty_email=<?php echo $row['faculty_email'] ?> "><button class="button des">UPDATE</button></a>
                                             </td>
                                         </tr>
+                                        <?php
+
+                                        ?>
+                                            <script type="text/javascript">
+                                                //
+                                            </script>
                                         <?php
                                     }
                                 }else{
