@@ -10,6 +10,18 @@
             margin-top: 25px;
             border-radius: 50%;
         }
+        .text_des
+        {
+            border:2px solid #ccc;
+            border-radius:4px;
+            padding-left:8px;
+            padding-top:8px;
+            padding-bottom:8px;
+            padding-right:52px;
+            margin-left:12px;
+            margin-top:4px;
+            margin-bottom:18px;
+        }
         .card {
             color:black;
             background-color: white;
@@ -47,7 +59,7 @@
             padding-right: 8px;
             background-color: orange;
             height: 471.1px;
-            width: 880px;
+            width: 890px;
             border: 4px solid orange;
             border-radius: 25px 0px 0px 25px;
         }
@@ -179,7 +191,10 @@
                 
                 <td>
                     <div class="box_right" style="overflow-y:scroll ; overflow-x:hidden ">
-                    <h2 style="text-align:center">Faculty Data ~</h2> 
+                    <h2 style="text-align:center">
+                        <i class="fa fa-fw fa-search" style="margin-right:4px"></i>Search Faculty Data ~
+                        <input class="text_des" type="text" placeholder="Search..." id="search_faculty" name="search_faculty"/>
+                    </h2>
                         <center>
                         <table border="6px" cellspacing="0px" cellpadding="10px" style="text-align:center; margin:8px; background-color: transparent; border-radius: 8px; border-color: thistle;">
                             <tr>

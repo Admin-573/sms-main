@@ -11,6 +11,18 @@
             margin-top: 25px;
             border-radius: 50%;
         }
+        .text_des
+        {
+            border:2px solid #ccc;
+            border-radius:4px;
+            padding-left:8px;
+            padding-top:8px;
+            padding-bottom:8px;
+            padding-right:52px;
+            margin-left:12px;
+            margin-top:4px;
+            margin-bottom:18px;
+        }
         .button {
             font-family: "Comic Sans MS";
             border: 2px solid black;
@@ -167,7 +179,10 @@
                 
                 <td>
                     <div class="box_right" style="overflow-y:scroll ; overflow-x:hidden ">
-                    <h2 style="text-align:center">Student Data ~</h2> 
+                    <h2 style="text-align:center">
+                        <i class="fa fa-fw fa-search" style="margin-right:4px"></i>Search Student Data ~
+                        <input class="text_des" type="text" placeholder="Search..." id="search_student" name="search_student"/>
+                    </h2> 
                         <center>
                         <table border="6px" cellspacing="0px" cellpadding="8px" style="margin:8px; background-color: transparent;border-radius: 6px; border-color: #81490F;">
                             <tr>
