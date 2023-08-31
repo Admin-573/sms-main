@@ -181,7 +181,12 @@
                     <div class="box_right" style="overflow-y:scroll ; overflow-x:hidden ">
                     <h2 style="text-align:center">
                         <i class="fa fa-fw fa-search" style="margin-right:4px"></i>Search Student Data ~
-                        <input class="text_des" type="text" placeholder="Search..." id="search_student" name="search_student"/>
+                            <form style="margin-top:8px" action="" method="post">
+                                <input class="text_des" type="text" placeholder="Search..." id="search_faculty_box"
+                                    name="search_faculty_box" />
+                                <input class="button des" type="submit" id="btnSearch" name="btnSearch"
+                                    value="Search" />
+                            </form>
                     </h2> 
                         <center>
                         <table border="6px" cellspacing="0px" cellpadding="8px" style="margin:8px; background-color: transparent;border-radius: 6px; border-color: #81490F;">
